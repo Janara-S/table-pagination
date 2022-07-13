@@ -4,39 +4,35 @@ import { Table } from './Table'
 
 export default function App() {
   const columns = [
-    { accessor: 'code', label: 'Код' },
-    { accessor: 'name', label: 'Исследование' },
-    {accessor: 'biomaterialName', label: 'Биомат',  format: (value) => (value ? '✔️' : '✖️')},
-    {accessor: 'typeName', label: 'Тип услуги'},
-    {accessor: 'researchPriceId', label: 'Исследование PriceId'},
-    {accessor: 'researchId', label: 'Id'},
-    {accessor: 'currencyName', label: 'Название валюты'},
-    {accessor: 'price', label: 'Цена'},
+    { accessor: 'data', label: 'Дата' },
+    { accessor: 'name', label: 'Название' },
+    {accessor: 'amount', label: 'Количество'},
+    {accessor: 'distance', label: 'Расстояние'},
   
     
   ]
 
 
   const rows = [
-    { id: 0, code: '01-002', name: 'Кровь. Общий анализ крови(ОАК)', biomaterialName: 'true', typeName: 'Анализ', researchPriceId:  1898881, researchId: 6037, currencyName: 'Тенге', price:20000,
+    { id: 0, data: '20.03.2022', name: 'Перевозка', amount: '1000 т', distance: '100 км',
   },
-    { id: 0, code: '01-002', name: 'Кровь. LE-клетки. Кровь с чего то там', biomaterialName: 'false', typeName: 'Аналаз', researchPriceId:  1898881, researchId: 6037, currencyName: 'Тенге', price:20000,
+  { id: 0, data: '20.05.2022', name: 'Грузо перевозка', amount: '900 т', distance: '70 км',
+  },
+  { id: 0, data: '20.03.2022', name: 'Перевозка', amount: '7000 т', distance: '100 км',
 },
-{ id: 0, code: '01-092', name: 'Моча. 17КС. Моча утренняя', biomaterialName: 'true', typeName: 'Аналаз', researchPriceId:  1859481, researchId: 3437, currencyName: 'Тенге', price:10000,
+{ id: 0, data: '20.05.2022', name: 'Грузо перевозка', amount: '1100 т', distance: '70 км',
 },
-{ id: 0, code: '01-092', name: 'Кал на скрытую кровь', biomaterialName: 'false', typeName: 'Аналаз', researchPriceId:  8459481, researchId: 3439, currencyName: 'Тенге', price:10000,
+{ id: 0, data: '20.03.2022', name: 'Перевозка', amount: '8000 т', distance: '100 км',
 },
-{ id: 0, code: '01-092', name: 'Дифференциальная диагностика гранулезоклеточных опухолей', biomaterialName: 'false', typeName: 'Аналаз', researchPriceId:  8459481, researchId: 3439, currencyName: 'Тенге', price:10000,
+{ id: 0, data: '20.05.2022', name: 'Грузо перевозка', amount: '800 т', distance: '70 км',
 },
-{ id: 0, code: '01-092', name: 'Фторпиримидины', biomaterialName: 'true', typeName: 'Аналаз', researchPriceId:  8459481, researchId: 3439, currencyName: 'Тенге', price:50000,
+{ id: 0, data: '20.03.2022', name: 'Перевозка', amount: '1200 т', distance: '100 км',
 },
-{ id: 0, code: '01-092', name: 'Дифференциальная диагностика гранулезоклеточных опухолей', biomaterialName: 'true', typeName: 'Аналаз', researchPriceId:  8459481, researchId: 3439, currencyName: 'Тенге', price:10000,
+{ id: 0, data: '20.05.2022', name: 'Грузо перевозка', amount: '9000 т', distance: '70 км',
 },
-{ id: 0, code: '01-092', name: 'Фторпиримидины', biomaterialName: 'true', typeName: 'Аналаз', researchPriceId:  8459481, researchId: 3439, currencyName: 'Тенге', price:50000,
+{ id: 0, data: '20.03.2021', name: 'Перевозка', amount: '200 т', distance: '100 км',
 },
-{ id: 0, code: '01-092', name: 'Дифференциальная диагностика гранулезоклеточных опухолей', biomaterialName: 'true', typeName: 'Аналаз', researchPriceId:  8459481, researchId: 3439, currencyName: 'Тенге', price:10000,
-},
-{ id: 0, code: '01-092', name: 'Фторпиримидины', biomaterialName: 'true', typeName: 'Аналаз', researchPriceId:  8459481, researchId: 3439, currencyName: 'Тенге', price:50000,
+{ id: 0, data: '20.05.2022', name: 'Грузо перевозка', amount: '900 т', distance: '70 км',
 },
     
   ]
